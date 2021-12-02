@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
@@ -26,6 +26,7 @@ const Counter = () => {
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
+          {''}
           -
         </button>
         <span className={styles.value}>{count}</span>
@@ -65,6 +66,6 @@ const Counter = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Counter;
